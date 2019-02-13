@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/01/2018 17:51:43 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="obj.Partido" table="partido" schema="public" optimistic-lock="version">
+        <id name="idpartido" type="big_decimal">
+            <column name="idpartido" precision="131089" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="local" type="string">
+            <column name="local" not-null="true" />
+        </property>
+        <property name="visitante" type="string">
+            <column name="visitante" not-null="true" />
+        </property>
+        <property name="anio" type="big_decimal">
+            <column name="anio" precision="131089" scale="0" />
+        </property>
+        <property name="ptslocal" type="big_decimal">
+            <column name="ptslocal" precision="131089" scale="0" />
+        </property>
+        <property name="ptsvisit" type="big_decimal">
+            <column name="ptsvisit" precision="131089" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

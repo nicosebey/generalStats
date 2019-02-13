@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/01/2018 17:51:43 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="obj.Ficha" table="ficha" schema="public" optimistic-lock="version">
+        <id name="idficha" type="big_decimal">
+            <column name="idficha" precision="131089" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="jugador" type="big_decimal">
+            <column name="jugador" precision="131089" scale="0" />
+        </property>
+        <property name="partido" type="big_decimal">
+            <column name="partido" precision="131089" scale="0" />
+        </property>
+        <property name="equipo" type="string">
+            <column name="equipo" />
+        </property>
+        <property name="anio" type="big_decimal">
+            <column name="anio" precision="131089" scale="0" />
+        </property>
+        <property name="puntos" type="big_decimal">
+            <column name="puntos" precision="131089" scale="0" />
+        </property>
+        <property name="asistencias" type="big_decimal">
+            <column name="asistencias" precision="131089" scale="0" />
+        </property>
+        <property name="rebotes" type="big_decimal">
+            <column name="rebotes" precision="131089" scale="0" />
+        </property>
+        <property name="rebOfensivos" type="big_decimal">
+            <column name="reb_ofensivos" precision="131089" scale="0" />
+        </property>
+        <property name="rebDefensivos" type="big_decimal">
+            <column name="reb_defensivos" precision="131089" scale="0" />
+        </property>
+        <property name="tapones" type="big_decimal">
+            <column name="tapones" precision="131089" scale="0" />
+        </property>
+        <property name="perdidas" type="big_decimal">
+            <column name="perdidas" precision="131089" scale="0" />
+        </property>
+        <property name="fules" type="big_decimal">
+            <column name="fules" precision="131089" scale="0" />
+        </property>
+        <property name="robos" type="big_decimal">
+            <column name="robos" precision="131089" scale="0" />
+        </property>
+        <property name="inLibres" type="big_decimal">
+            <column name="in_libres" precision="131089" scale="0" />
+        </property>
+        <property name="outLibres" type="big_decimal">
+            <column name="out_libres" precision="131089" scale="0" />
+        </property>
+        <property name="inA3" type="big_decimal">
+            <column name="in_a_3" precision="131089" scale="0" />
+        </property>
+        <property name="outA3" type="big_decimal">
+            <column name="out_a_3" precision="131089" scale="0" />
+        </property>
+        <property name="inA2" type="big_decimal">
+            <column name="in_a_2" precision="131089" scale="0" />
+        </property>
+        <property name="outA2" type="big_decimal">
+            <column name="out_a_2" precision="131089" scale="0" />
+        </property>
+        <property name="inB3" type="big_decimal">
+            <column name="in_b_3" precision="131089" scale="0" />
+        </property>
+        <property name="inB2" type="big_decimal">
+            <column name="in_b_2" precision="131089" scale="0" />
+        </property>
+        <property name="outB3" type="big_decimal">
+            <column name="out_b_3" precision="131089" scale="0" />
+        </property>
+        <property name="outB2" type="big_decimal">
+            <column name="out_b_2" precision="131089" scale="0" />
+        </property>
+        <property name="inC3" type="big_decimal">
+            <column name="in_c_3" precision="131089" scale="0" />
+        </property>
+        <property name="inC2" type="big_decimal">
+            <column name="in_c_2" precision="131089" scale="0" />
+        </property>
+        <property name="outC3" type="big_decimal">
+            <column name="out_c_3" precision="131089" scale="0" />
+        </property>
+        <property name="outC2" type="big_decimal">
+            <column name="out_c_2" precision="131089" scale="0" />
+        </property>
+        <property name="inD3" type="big_decimal">
+            <column name="in_d_3" precision="131089" scale="0" />
+        </property>
+        <property name="inD2" type="big_decimal">
+            <column name="in_d_2" precision="131089" scale="0" />
+        </property>
+        <property name="outD3" type="big_decimal">
+            <column name="out_d_3" precision="131089" scale="0" />
+        </property>
+        <property name="outD2" type="big_decimal">
+            <column name="out_d_2" precision="131089" scale="0" />
+        </property>
+        <property name="inE3" type="big_decimal">
+            <column name="in_e_3" precision="131089" scale="0" />
+        </property>
+        <property name="inE2" type="big_decimal">
+            <column name="in_e_2" precision="131089" scale="0" />
+        </property>
+        <property name="outE3" type="big_decimal">
+            <column name="out_e_3" precision="131089" scale="0" />
+        </property>
+        <property name="outE2" type="big_decimal">
+            <column name="out_e_2" precision="131089" scale="0" />
+        </property>
+        <property name="inF" type="big_decimal">
+            <column name="in_f" precision="131089" scale="0" />
+        </property>
+        <property name="outF" type="big_decimal">
+            <column name="out_f" precision="131089" scale="0" />
+        </property>
+        <property name="condicion" type="string">
+            <column name="condicion" />
+        </property>
+        <property name="rival" type="string">
+            <column name="rival" />
+        </property>
+    </class>
+</hibernate-mapping>

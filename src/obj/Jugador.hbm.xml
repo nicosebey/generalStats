@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/01/2018 17:51:43 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="obj.Jugador" table="jugador" schema="public" optimistic-lock="version">
+        <id name="dni" type="big_decimal">
+            <column name="dni" precision="131089" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="equipo" class="obj.Equipo" fetch="select">
+            <column name="equipo" />
+            <column name="anio" precision="131089" scale="0" />
+        </many-to-one>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" />
+        </property>
+        <property name="pos" type="string">
+            <column name="pos" />
+        </property>
+        <property name="dorsal" type="string">
+            <column name="dorsal" />
+        </property>
+    </class>
+</hibernate-mapping>
